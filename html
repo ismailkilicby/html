@@ -1,0 +1,227 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Adı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+     .my-nav{
+         background-color:rgba(255, 214, 125, 0.979) ;
+     }
+     .hakkimda-foto{
+         height: 200px;
+         width: 200px;
+         border-radius: 100px;
+     }
+     body{
+         background-color: rgba(255, 214, 125, 0.979);
+     }
+     .container{
+         background-color:beige;
+     }
+     .carousel-inner img {
+    width: 100%;
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+ </style>   
+</head>
+<body>
+<nav class="navbar navbar-default my-nav navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <a class="navbar-brand" href="#">Website Adı</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li> <a href="#">Anasayfa </a> </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Portföyüm <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a onclick="MenuScroll(portfoy1)" href="#portfoy1">1.Portföy</a></li>
+                    <li><a onclick="MenuScroll(portfoy2)" href="#portfoy2">2.Portföy</a></li>
+                    <li><a onclick="MenuScroll(portfoy3)" href="#portfoy3">3.Portföy</a></li>
+                    <li><a onclick="MenuScroll(portfoy4)" href="#portfoy4">4.Portföy</a></li>
+                </ul>
+            </li>
+            <li><a onclick="MenuScroll(hakkimda)" href="#hakkimda">Hakkımda</a></li>
+            <li><a onclick="MenuScroll(iletisim)" href="#iletisim">İletişim</a></li>
+         </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Giriş yap</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Üye ol</a></li>
+        </ul> 
+    </div>
+</nav>
+<div class="container my-container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="https://blog.teknosa.com/wp-content/uploads/2021/10/huaweinin-androidi-bilgisayara-getirecek-yazilimi-teknosa.jpg" alt="New York" width="1200" height="700">
+            <div class="carousel-caption">
+              <h3>Yazılım</h3>
+              <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>      
+          </div>
+    
+          <div class="item">
+            <img src="https://i.haberglobal.com.tr/storage/haber/2020/04/22/1-milyon-yazilimci-projesi-nedir-basvuru-nasil-yapilir-1-milyon-istihdam-uygulamasi-kilavuzu_1587563060.jpg" alt="Chicago" width="1200" height="700">
+            <div class="carousel-caption">
+              <h3>Kodlama</h3>
+              <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>      
+          </div>
+        
+          <div class="item">
+            <img src="https://parakule.com/images/2021_12/2021_12_02/-borsada-en-cok-deger-kazanan-hisseler-0212210716_m2.jpg?v=1638461595" alt="Los Angeles" width="1200" height="700">
+            <div class="carousel-caption">
+              <h3>Veri tabanı</h3>
+              <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+            </div>      
+          </div>
+        </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Önceki</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Sonraki</span>
+      </a>
+    </div>
+    <div class="container-fluid row portfoy-bolumu1" >
+        <h2 style="text-align: center;" class="portfoy-baslik"><span class="glyphicon glyphicon-briefcase"> PORTFÖY</span></h2>
+        <div id="portfoy1" class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://www.masterconsulting.com.tr/wp-content/uploads/2020/04/02-arge-inovasyon.jpg" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p style="color: rgb(109, 58, 7);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRODfPgmm0olRHnp72HHQ8n4WJb0XOdyP9Z6A&usqp=CAU" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p style="color: rgb(109, 58, 7);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div id="portfoy2" class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://omrunprojesi.files.wordpress.com/2015/06/innovation.jpg?w=1231" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://www.muhasebenews.com/wp-content/uploads/2017/04/argeinodestek.jpg" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div id="portfoy3"  class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_7tsgtjPkG0I0Z0Ags5bMdFZsiJckn5bkUw&usqp=CAU" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p style="color: rgb(109, 58, 7);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://www.nedir-bu.com/wp-content/uploads/2021/03/Kullanim-Haklarina-Gore-Yazilim-Turleri-Nelerdir.jpg" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p style="color: rgb(109, 58, 7);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div id="portfoy4"  class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://www.ideasoft.com.tr/wp-content/uploads/2021/09/yazilim-e1630925044945.jpg" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <img style="width: 250px;height:250px" src="https://bilimvegelecek.com.tr/wp-content/uploads/2018/01/yazilim-bilisim-kodlama-1.jpg" >
+        </div>
+        <div class="col-xs-6 col-md-3 col-sm-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deserunt nesciunt dolore ipsa consequatur accusantium natus quisquam, provident et expedita dicta illo suscipit adipisci fugit. Id ratione atque dignissimos! Ad.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique nesciunt totam tenetur et tempora dolores eos ullam magni! Tenetur amet totam asperiores in libero eligendi accusantium odit qui sunt!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi rerum quos asperiores illum, eos laudantium cumque voluptatem officia sapiente facere iste obcaecati aspernatur exercitationem sit maiores ipsa praesentium id? Fuga?
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid row hakkimda-bolumu" id="hakkimda">
+        <h2 style="text-align: center;" class="hakkimda-baslik"><span class="glyphicon glyphicon-user"></span> HAKKIMDA</h2>
+        <div class="col-xs-12 col-md-4" style="text-align:center">
+            <img style="" class="hakkimda-foto" src="https://i.tmgrup.com.tr/gq/original/17-06/22/user_male_circle_filled1600.png" alt="Profil-foto">
+        </div> 
+        <div class="col-xs-12 col-md-8">
+            <p class="hakkimda-yazisi">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt exercitationem nostrum ex excepturi explicabo iste doloremque a minima perspiciatis modi, suscipit accusantium ab qui facilis obcaecati quibusdam pariatur natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt exercitationem nostrum ex excepturi explicabo iste doloremque a minima perspiciatis modi, suscipit accusantium ab qui facilis obcaecati quibusdam pariatur natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt exercitationem nostrum ex excepturi explicabo iste doloremque a minima perspiciatis modi, suscipit accusantium ab qui facilis obcaecati quibusdam pariatur natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt exercitationem nostrum ex excepturi explicabo iste doloremque a minima perspiciatis modi, suscipit accusantium ab qui facilis obcaecati quibusdam pariatur natus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sunt exercitationem nostrum ex excepturi explicabo iste doloremque a minima perspiciatis modi, suscipit accusantium ab qui facilis obcaecati quibusdam pariatur natus.
+            </p>
+        </div>   
+    </div>
+    <div class="container-fluid iletisim-bolumu" id="iletisim">
+        <h2 style="text-align: center;" class="iletisim-baslik"><span class="glyphicon glyphicon-earphone"></span> İLETİŞİM</h2>
+        <div id="contact" class="container-fluid bg-grey">
+            <div class="row">
+              <div class="col-sm-5">
+                <p>Bizimle iletişime geçin, 24 saat içinde size geri dönelim.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Isparta/Turkey</p>
+                <p><span class="glyphicon glyphicon-phone"></span> 05325323232</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> email@gmail.com</p>
+              </div>
+              <div class="col-sm-7 slideanim">
+                <div class="row">
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="İsim" type="text" required>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                  </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Yorum" rows="5"></textarea><br>
+                <div class="row">
+                  <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Gönder</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+</body>
+</html>
